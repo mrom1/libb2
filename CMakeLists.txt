@@ -15,10 +15,6 @@ cmake_policy(VERSION 3.0)
 cmake_policy(SET CMP0054 NEW)
 project(libb2 VERSION 0.97 LANGUAGES C)
 
-if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
-	message(FATAL_ERROR "in-source builds are not supported!")
-endif()
-
 # add cmake script path
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
 
